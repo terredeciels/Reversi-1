@@ -1,6 +1,7 @@
 package player;
 
-import game.*;
+import game.BoardHelper;
+import game.GamePlayer;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -26,11 +27,11 @@ public class RandomPlayer extends GamePlayer {
 
     @Override
     public Point play(int[][] board) {
-        ArrayList<Point> myPossibleMoves = BoardHelper.getAllPossibleMoves(board,myMark);
+        ArrayList<Point> myPossibleMoves = BoardHelper.getAllPossibleMoves(board, myMark);
 
-        if(myPossibleMoves.size() > 0){
+        if (myPossibleMoves.size() > 0) {
             return myPossibleMoves.get(rnd.nextInt(myPossibleMoves.size()));
-        }else{
+        } else {
             return null;
         }
 

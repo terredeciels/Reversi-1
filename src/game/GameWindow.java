@@ -1,11 +1,10 @@
 package game;
 
 import javax.swing.*;
-import java.awt.*;
 
 public class GameWindow extends JFrame {
 
-    public GameWindow(){
+    public GameWindow() {
         GamePanel gp = new GamePanel();
         this.add(gp);
         this.setTitle("Reversi v0.1");

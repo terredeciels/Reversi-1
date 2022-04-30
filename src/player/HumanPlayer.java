@@ -17,7 +17,7 @@ public class HumanPlayer extends GamePlayer {
 
     @Override
     public String playerName() {
-        return "User" ;
+        return "User";
     }
 
     @Override

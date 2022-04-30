@@ -5,7 +5,8 @@ import java.awt.*;
 public abstract class GamePlayer {
 
     protected int myMark;
-    public GamePlayer(int mark){
+
+    public GamePlayer(int mark) {
         myMark = mark;
     }
 

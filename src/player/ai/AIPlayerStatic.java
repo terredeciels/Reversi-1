@@ -27,6 +27,6 @@ public class AIPlayerStatic extends GamePlayer {
 
     @Override
     public Point play(int[][] board) {
-        return Minimax.solve(board,myMark,searchDepth,evaluator);
+        return Minimax.solve(board, myMark, searchDepth, evaluator);
     }
 }
